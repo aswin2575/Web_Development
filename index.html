@@ -3,33 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>Adidas Football Shop</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="calculator">
-        <div class="display" id="display">0</div>
-        <div class="buttons">
-            <button class="btn" onclick="clearDisplay()">C</button>
-            <button class="btn" onclick="appendToDisplay('/')">/</button>
-            <button class="btn" onclick="appendToDisplay('*')">*</button>
-            <button class="btn" onclick="deleteLast()">DEL</button>
-            <button class="btn" onclick="appendToDisplay('7')">7</button>
-            <button class="btn" onclick="appendToDisplay('8')">8</button>
-            <button class="btn" onclick="appendToDisplay('9')">9</button>
-            <button class="btn" onclick="appendToDisplay('-')">-</button>
-            <button class="btn" onclick="appendToDisplay('4')">4</button>
-            <button class="btn" onclick="appendToDisplay('5')">5</button>
-            <button class="btn" onclick="appendToDisplay('6')">6</button>
-            <button class="btn" onclick="appendToDisplay('+')">+</button>
-            <button class="btn" onclick="appendToDisplay('1')">1</button>
-            <button class="btn" onclick="appendToDisplay('2')">2</button>
-            <button class="btn" onclick="appendToDisplay('3')">3</button>
-            <button class="btn" onclick="calculate()">=</button>
-            <button class="btn" onclick="appendToDisplay('0')">0</button>
-            <button class="btn" onclick="appendToDisplay('.')">.</button>
-        </div>
-    </div>
+    <header>
+        <div class="logo">Adidas Football Shop</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#cart">Cart</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to Adidas Football Shop</h2>
+            <p>Your one-stop shop for the best football gear!</p>
+        </section>
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="product-list">
+                <!-- Products will be dynamically added here -->
+            </div>
+        </section>
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <div class="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-summary">
+                <div>Total: $<span id="cart-total">0.00</span></div>
+                <button id="checkout">Checkout</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Adidas Football Shop. All rights reserved.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
